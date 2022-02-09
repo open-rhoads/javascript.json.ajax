@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<head>
+		<title>Pizza Menu</title>
+		<script src="javascript.js">
+			
+		</script>
+
+	</head>
+	<body>
+		<h1>Pizza Restaurant</h1>
+		<h2>Menu</h2>
+		<p id="menu">  </p>
+		<h2>Order Online</h2>
+		<form>
+			<label>Slices of Pizza:</label>
+			<input type="text" size="2" name="slices" id="numberSlices" />
+			<p>Toppings:</p>
+				<input type="checkbox" name="firstTopping" value=" pepperoni" id="topping1" />
+				<label for="topping1">Pepperoni</label>
+				<input type="checkbox" name="secondTopping" value=" meatballs" id="topping2" />
+				<label for="topping2">Meatballs</label>
+				<input type="checkbox" name="thirdTopping" value=" mushrooms" id="topping3" />
+				<label for="topping3">Mushrooms</label>
+				<input type="checkbox" name="fourthTopping" value=" olives" id="topping4" />
+				<label for="topping4">Olives</label>
+			<p>Sides:</p>
+				<input type="checkbox" name="firstSide" value=" potato salad" id="side1" />
+				<label for="side1">Potato Salad</label>
+				<input type="checkbox" name="secondSide" value=" hummus" id="side2" />
+				<label for="side1">Hummus</label>
+				<input type="checkbox" name="thirdSide" value=" caesar salad" id="side3" />
+				<label for="side1">Caesar Salad</label>
+				<input type="checkbox" name="fourthSide" value=" garden salad" id="side4" />
+				<label for="side1">Garden Salad</label>
+			<p>Drinks:</p>
+				Soda:
+				<input type="checkbox" name="sdrink" value=" small soda" id="small" />
+				<label for="small">Small</label>
+				<input type="checkbox" name="mdrink" value=" medium soda" id="medium" />
+				<label for="medium">Medium</label>
+				<input type="checkbox" name="ldrink" value=" large soda" id="large" />
+				<label for="large">Large</label>
+				<br /><input type="checkbox" name="juicy" value=" juice" id="juice" />
+				<label for="juice">Juice</label>
+				<br /><input type="checkbox" name="aqua" value=" water" id="water" />
+				<label for="water">Water</label>
+				<p><input type="button" value="Your Order" onclick="displayOrder()" /></p>
+		</form>
+		<p id="pizzaSlices"></p>
+		<p id="add-ons"></p>
+	</body>
+</html>
